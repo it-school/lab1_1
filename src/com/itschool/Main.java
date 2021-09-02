@@ -8,5 +8,8 @@ public class Main {
          System.out.println("1234567,jlhkj");
       }
       System.out.println("qwertyuioiuytr");
+      System.out.println("qwertyuioiuytr");
+      System.out.println("qwertyuioiuytr");
+      System.out.println("qwertyuioiuytr");
    }
 }
