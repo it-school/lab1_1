@@ -7,6 +7,6 @@ public class Main {
       for (int k = 0; k < 2; k++) {
          System.out.println("1234567,jlhkj");
       }
-      System.out.println("9876543");
+      System.out.println("qwertyuioiuytr");
    }
 }
