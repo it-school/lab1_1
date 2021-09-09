@@ -1,28 +1,17 @@
 package com.itschool;
 
-import com.itschool.classes.User;
+import com.itschool.classes.Student;
 
 public class Main {
-
    public static void main(String[] args) {
-      /*
-      egfdhfjdgd
-      szhfjgh
-      rfjgkhkj
-      gdzfhdjgfj
-       */
-      System.out.println("thdyujfikohjkl");
-      for (int k = 0; k < 2; k++) {
-         System.out.println("1234567,jlhkj");
-      }
-      System.out.println("qwertyuioiuytr");
-      System.out.println("qwertyuioiuytr");
-      System.out.println("qwertyuioiuytr");
-      System.out.println("qwertyuioiuytr");
+      Student student1 = new Student();
+      student1.setName("John");
+      student1.setGroup("AT201");
+      student1.setMathematics((byte) 120);
+      System.out.println(student1.getName());
 
-      User user = new User();
-      user.name = "Sgrdthydjgjh";
-      user.age = 16;
-      System.out.println(user.name + "\t" + user.age);
+      Student student2 = new Student("Bill", "AT201", (byte) -5, (byte) 0, (byte) 120);
+      student2.setMathematics((byte) 60);
+      System.out.println(student2);
    }
 }
