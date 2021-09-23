@@ -5,6 +5,7 @@ import java.util.Locale;
 public class Student {
    String name;
    String group;
+   String department;
    byte physics;
    byte mathematics;
    byte history;
@@ -12,12 +13,21 @@ public class Student {
    public Student() {
    }
 
-   public Student(String name, String group, byte physics, byte mathematics, byte history) {
+   public Student(String name, String group, byte physics, byte mathematics, byte history, int departmentID) {
       this.name = name;
       this.setGroup(group);
       this.setPhysics(physics);
       this.setMathematics(mathematics);
       this.setHistory(history);
+      this.setDepartment(departmentID);
+   }
+
+   public String getDepartment() {
+      return department;
+   }
+
+   public void setDepartment(int id) {
+      this.department = id < 0 ? Utils.getRandomDepartment() : Utils.getDepartmentByID(id);
    }
 
    public String getGroup() {
@@ -65,6 +75,7 @@ public class Student {
       return "Student{" +
               "name='" + name + '\'' +
               ", group='" + group + '\'' +
+              ", department='" + department + '\'' +
               ", physics=" + physics +
               ", mathematics=" + mathematics +
               ", history=" + history +
